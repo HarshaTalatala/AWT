@@ -32,4 +32,4 @@ db.student.update(
 
 // DELETE - Removing documents from the collection
 db.collection_name.remove({ "fieldname": "value" });
-db.collection_name.remove({ "regno": "3014" });
+db.collection_name.remove({ "regno": "12l4" });
