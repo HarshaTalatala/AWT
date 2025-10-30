@@ -4,17 +4,12 @@
 
 // CREATE - Inserting a document into a collection
 db.student.insert({
-  regNo: "3014",
-  name: "Test Student",
-  course: {
-    courseName: "MCA",
-    duration: "3 Years"
-  },
-  address: {
-    city: "Bangalore",
-    state: "KA",
-    country: "India"
-  }
+    name : "Harsha",
+    roll : "12l4",
+    email: "harsha@gmail.com",
+    branch: "IT",
+    complaintType: "Network Issue",
+    description: "Unable to connect to the internet",
 });
 
 // READ - Querying documents from a collection
@@ -23,16 +18,16 @@ db.student.find();
 
 // Find specific document by field value
 db.collection_name.find({ "fieldname": "value" });
-db.students.find({ "regNo": "3014" });
+db.students.find({ "regNo": "12l4" });
 
 // UPDATE - Updating a document in a collection
 db.student.update(
-  { "regNo": "3014" },
-  {
-    $set: {
-      "name": "Viraj"
+    { "regNo": "12l4" },
+    {
+        $set: {
+            "name": "Viraj"
+        }
     }
-  }
 );
 
 // DELETE - Removing documents from the collection
