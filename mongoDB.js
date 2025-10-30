@@ -18,11 +18,11 @@ db.student.find();
 
 // Find specific document by field value
 db.collection_name.find({ "fieldname": "value" });
-db.students.find({ "regNo": "12l4" });
+db.students.find({ "roll": "12l4" });
 
 // UPDATE - Updating a document in a collection
 db.student.update(
-    { "regNo": "12l4" },
+    { "roll": "12l4" },
     {
         $set: {
             "name": "Viraj"
@@ -32,4 +32,4 @@ db.student.update(
 
 // DELETE - Removing documents from the collection
 db.collection_name.remove({ "fieldname": "value" });
-db.collection_name.remove({ "regno": "12l4" });
+db.collection_name.remove({ "roll": "12l4" });
