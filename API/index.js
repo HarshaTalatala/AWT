@@ -21,7 +21,6 @@ app.post("/", async (req, res) => {
      city: data.name,
      temp: data.main.temp,
      description: data.weather[0].description,
-     icon: data.weather[0].icon,
    };
    res.render("Form", { weather, error: null });
  } catch (error) {
